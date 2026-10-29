@@ -4,6 +4,8 @@ import { Entidad } from '../entidades/modelos/entidad.entity.js';
 import { IpAutorizada } from '../entidades/modelos/ip-autorizada.entity.js';
 import { Credencial } from '../credenciales/modelos/credencial.entity.js';
 import { PermisoServicio } from '../entidades/modelos/permiso-servicio.entity.js';
+import { Matrimonio } from '../matrimonios/modelos/matrimonio.entity.js';
+
 
 export default new DataSource({
   type: 'postgres',
@@ -12,7 +14,7 @@ export default new DataSource({
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
-  entities: [Entidad, IpAutorizada, Credencial, PermisoServicio],
+  entities: [Entidad, IpAutorizada, Credencial, PermisoServicio, Matrimonio],
   migrations: ['dist/migraciones/*.js'],
   synchronize: false,
 });

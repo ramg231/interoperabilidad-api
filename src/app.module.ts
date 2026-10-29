@@ -8,7 +8,7 @@ import { CredencialesModule } from './credenciales/credenciales.module.js';
 import { AutenticacionModule } from './autenticacion/autenticacion.module.js';
 import { PrediosModule } from './predios/predios.module.js';
 import { LicenciasModule } from './licencias/licencias.module.js';
-
+import { MatrimoniosModule } from './matrimonios/matrimonios.module.js';
  
 @Module({
   imports: [
@@ -39,7 +39,7 @@ import { LicenciasModule } from './licencias/licencias.module.js';
     PrediosModule,
 
     LicenciasModule,
-
+    MatrimoniosModule,
  
   ],
   controllers: [AppController],
